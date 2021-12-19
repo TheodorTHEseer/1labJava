@@ -1,5 +1,5 @@
 package com.company;
 
 public interface Named {
-    String giveName();
+    String getName();
 }

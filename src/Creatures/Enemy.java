@@ -14,6 +14,7 @@ public class Enemy extends Creature {
     public Enemy(){
         this.name=Names[0][rnd.nextInt(10)]+Names[1][rnd.nextInt(10)]+Names[2][rnd.nextInt(10)];
         this.lvl= rnd.nextInt(5-1)+1;
+        this.hp= rnd.nextInt(25-10)+10*lvl;
         this.damage= rnd.nextInt(10-1)+1;
     }
 }

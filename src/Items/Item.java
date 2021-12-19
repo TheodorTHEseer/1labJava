@@ -26,7 +26,7 @@ public class Item implements Named {
     public void setCost(int cost){this.cost = cost;}
     public void setRequiredLvl(int requiredLvl){this.requiredLvl = requiredLvl;}
     @Override
-    public String giveName() {
+    public String getName() {
         String str = this.name;
         return str;
     }

@@ -7,15 +7,13 @@ public class Creature implements Named {
     protected int hp;
     protected int damage;
     protected int lvl;
-    protected int dexteritySkill;
 
-    public String shortName;
 
     public Creature(){
     }
 
     @Override
-    public String giveName() {
+    public String getName() {
         String str = this.name;
         return str;
     }

@@ -30,10 +30,10 @@ public class Main {
 
     private static void showArrayW(ArrayList<Weaponry> arrayList){
         for (int count=0; count<arrayList.size();count++)
-            System.out.println(arrayList.get(count).giveName());
+            System.out.println(arrayList.get(count).getName());
     }
     private static void showArrayE(ArrayList<Enemy> arrayList){
         for (int count=0; count<arrayList.size();count++)
-            System.out.println(arrayList.get(count).giveName());
+            System.out.println(arrayList.get(count).getName());
     }
 }
