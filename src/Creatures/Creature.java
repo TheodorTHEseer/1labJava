@@ -1,9 +1,8 @@
 package Creatures;
 
 import com.company.Named;
-import pac.Equipment;
-import pac.Item;
-import pac.Weaponry;
+import Items.Equipment;
+import Items.Weaponry;
 
 import java.util.ArrayList;
 
@@ -53,7 +52,7 @@ public class Creature implements Named {
     public void setDexteritySkill(int dexteritySkill){this.dexteritySkill = dexteritySkill;}
     public void setMoney(int Money){this.money = money;}
 
-    public ArrayList<pac.Equipment> Inventory = new ArrayList<Equipment>();//Инвентарь, хилки+щит
+    public ArrayList<Items.Equipment> Inventory = new ArrayList<Equipment>();//Инвентарь, хилки+щит
 
     public ArrayList<Weaponry> Equipment = new ArrayList<Weaponry>();//Экипировка в руках - оружие
 

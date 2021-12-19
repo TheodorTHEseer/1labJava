@@ -1,8 +1,7 @@
 package Creatures;
 
 
-import com.company.Named;
-import pac.Weaponry;
+import Items.Weaponry;
 
 import java.util.Random;
 

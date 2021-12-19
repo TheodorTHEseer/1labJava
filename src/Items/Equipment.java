@@ -1,4 +1,4 @@
-package pac;
+package Items;
 
 public class Equipment extends Item{
     private int hpBoost;

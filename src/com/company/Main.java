@@ -1,7 +1,7 @@
 package com.company;
 
 import Creatures.Enemy;
-import pac.Weaponry;
+import Items.Weaponry;
 
 import java.util.ArrayList;
 
