@@ -15,24 +15,8 @@ public class Enemy extends Creature {
 
 
     public Enemy(){
-        this.name=Names[0][rnd.nextInt(10-0)+0]+Names[1][rnd.nextInt(10-0)+0]+Names[2][rnd.nextInt(10-0)+0];
+        this.name=Names[0][rnd.nextInt(10)]+Names[1][rnd.nextInt(10)]+Names[2][rnd.nextInt(10)];
         this.lvl= rnd.nextInt(5-1)+1;
         this.damage= rnd.nextInt(10-1)+1;
     }
-
-    private String getLine(){
-        String line = this.getName()+","+ this.getHp()+","+ this.getDamage()+","+this.getDexteritySkill()+","+
-                this.getLvl()+","+this.xPos+","+this.yPos;
-        return line;
-    }
-
-    public void addWeapon(){
-        Random rnd = new Random();
-        Weaponry mySword = new Weaponry("Месть архонта", 1, rnd.nextInt(50- 1)+1);
-        this.Equipment.add(mySword);
-    }
-    public void display(){
-        System.out.println(getLine());
-    }
-
 }
