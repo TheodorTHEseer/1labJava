@@ -19,9 +19,7 @@ public class Item implements Named {
         this.cost = requiredLvl*10* rnd.nextInt(100-1)+1;
     }
     //Getters
-    public String getName(){return name;}
     public int getCost(){return cost;}
-    public int getRequiredLvl(){return requiredLvl;}
 
     //Setters
     public void setName(String name){this.name = name;}

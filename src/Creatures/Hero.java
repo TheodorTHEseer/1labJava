@@ -1,8 +1,6 @@
 package Creatures;
 
 
-import Items.Weaponry;
-
 import java.util.Random;
 
 public class Hero extends Creature {
