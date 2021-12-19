@@ -1,6 +1,7 @@
 package com.company;
 
 import Creatures.Enemy;
+import Items.Equipment;
 import Items.Weaponry;
 
 import java.util.ArrayList;
@@ -8,10 +9,16 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-    ArrayList <Weaponry> weaponry = generateArrayOfWeaponry();
+    ArrayList <Weaponry> weapons = generateArrayOfWeaponry();
     ArrayList<Enemy> enemies = generateArrayOfEnemies();
-    showArrayW(weaponry);
-    showArrayE(enemies);
+        System.out.println("---Weapons---");
+        for (Weaponry weaponry:weapons) {
+        weaponry.display();
+        }
+        System.out.println("---Enemies---");
+        for (Enemy enemy:enemies) {
+            enemy.display();
+        }
 
     }
     private static ArrayList generateArrayOfWeaponry(){
@@ -28,12 +35,4 @@ public class Main {
         return arrayList;
     }
 
-    private static void showArrayW(ArrayList<Weaponry> arrayList){
-        for (int count=0; count<arrayList.size();count++)
-            System.out.println(arrayList.get(count).getName());
-    }
-    private static void showArrayE(ArrayList<Enemy> arrayList){
-        for (int count=0; count<arrayList.size();count++)
-            System.out.println(arrayList.get(count).getName());
-    }
 }

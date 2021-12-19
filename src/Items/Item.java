@@ -30,5 +30,9 @@ public class Item implements Named {
     public String getName() {
         return this.name;
     }
+    @Override
+    public void display() {
+        System.out.printf("Name: %32s, cost: %11d\n", this.name,this.cost);
+    }
 
 }

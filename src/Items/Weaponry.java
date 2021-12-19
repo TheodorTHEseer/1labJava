@@ -33,4 +33,5 @@ public class Weaponry extends Item{
         this.weaponDmg=requiredLvl*10;
         this.cost=weaponDmg*15;
     }
+
 }

@@ -17,4 +17,9 @@ public class Creature implements Named {
     public String getName() {
         return this.name;
     }
+
+    @Override
+    public void display() {
+        System.out.printf("Name: %32s, lvl: %12d\n", this.name,this.lvl);
+    }
 }
