@@ -27,8 +27,7 @@ public class Item implements Named {
     public void setRequiredLvl(int requiredLvl){this.requiredLvl = requiredLvl;}
     @Override
     public String getName() {
-        String str = this.name;
-        return str;
+        return this.name;
     }
 
 }

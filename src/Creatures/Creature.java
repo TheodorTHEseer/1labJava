@@ -14,7 +14,6 @@ public class Creature implements Named {
 
     @Override
     public String getName() {
-        String str = this.name;
-        return str;
+        return this.name;
     }
 }
