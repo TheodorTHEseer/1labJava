@@ -14,7 +14,7 @@ public class Main {
     showArrayE(enemies);
 
     }
-    private static ArrayList<Weaponry> generateArrayOfWeaponry(){
+    private static ArrayList generateArrayOfWeaponry(){
         ArrayList<Weaponry> arrayList= new ArrayList<>();
         for (int count =0; count<10;count++)
             arrayList.add(new Weaponry());

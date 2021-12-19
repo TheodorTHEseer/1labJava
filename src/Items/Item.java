@@ -7,6 +7,9 @@ import java.util.Random;
 public class Item implements Named {
     protected String name;
     protected int cost;
+
+
+
     protected int requiredLvl;
 
 
@@ -20,11 +23,9 @@ public class Item implements Named {
     }
     //Getters
     public int getCost(){return cost;}
+    public int getRequiredLvl() {return requiredLvl;}
 
-    //Setters
-    public void setName(String name){this.name = name;}
     public void setCost(int cost){this.cost = cost;}
-    public void setRequiredLvl(int requiredLvl){this.requiredLvl = requiredLvl;}
     @Override
     public String getName() {
         return this.name;

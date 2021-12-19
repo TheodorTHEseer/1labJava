@@ -7,6 +7,7 @@ public class Creature implements Named {
     protected int hp;
     protected int damage;
     protected int lvl;
+    protected int armour;
 
 
     public Creature(){
